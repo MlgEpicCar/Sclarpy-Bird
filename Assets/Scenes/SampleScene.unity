@@ -505,7 +505,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 0000000077bd1c88
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -1114,6 +1114,7 @@ GameObject:
   - component: {fileID: 1198731518}
   - component: {fileID: 1198731519}
   - component: {fileID: 1198731520}
+  - component: {fileID: 1198731521}
   m_Layer: 3
   m_Name: Bird
   m_TagString: Bird
@@ -1270,6 +1271,18 @@ MonoBehaviour:
   flapStrength: 8
   logic: {fileID: 0}
   alive: 1
+--- !u!210 &1198731521
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198731515}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
 --- !u!1 &1935272353
 GameObject:
   m_ObjectHideFlags: 0
