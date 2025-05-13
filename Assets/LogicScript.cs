@@ -17,6 +17,9 @@ public class LogicScript : MonoBehaviour
     {
         playerHighscore = PlayerPrefs.GetInt("playerHighscore", 0);
         highscoreText.text = "Highscore: " + playerHighscore.ToString();
+
+        playerCoins = PlayerPrefs.GetInt("playerCoins", 0);
+        coinsText.text = "Coins: " + playerCoins.ToString();
     }
 
     [ContextMenu("Increase Score")]
@@ -36,7 +39,8 @@ public class LogicScript : MonoBehaviour
     public void addCoins(int coinsToAdd)
     {
         playerCoins += coinsToAdd;
-        scoreText.text = "Coins: " + playerCoins.ToString();
+        PlayerPrefs.SetInt("playerCoins", playerCoins);
+        coinsText.text = "Coins: " + playerCoins.ToString();
     }
 
     public void restartGame()
