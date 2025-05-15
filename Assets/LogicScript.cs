@@ -60,6 +60,10 @@ public class LogicScript : MonoBehaviour
             PlayerPrefs.SetInt("playerHighscore", 0);
             playerHighscore = PlayerPrefs.GetInt("playerHighscore", 0);
             highscoreText.text = "Highscore: " + playerHighscore.ToString();
+
+            PlayerPrefs.SetInt("playerCoins", 0);
+            playerCoins = PlayerPrefs.GetInt("playerCoins", 0);
+            coinsText.text = "Coins: " + playerCoins.ToString();
         }
     }
 }
